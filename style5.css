@@ -1,0 +1,234 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+      color: #fff;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+    }
+    
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-weight: 800;
+      transition: 0.3s;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      color:#6a11cb ;
+    }
+
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    /* Home Section */
+    .home {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      padding-top: 100px;
+    }
+
+    .home .content {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .home .content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .home .content h1 span {
+      color: #ffd700;
+    }
+
+    .home .content h3 {
+      font-size: 24px;
+      color: #ccc;
+      height: 40px;
+    }
+
+    .home .btns {
+      margin: 20px 0;
+    }
+
+    .btn {
+      background-image: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 10px 20px;
+      border: 2px solid #6a11cb;
+      border-radius: 25px;
+      font-weight: bold;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      user-select: none;
+    }
+
+    .btn.outline {
+      
+      border: 2px solid #6a11cb;
+      color: #fff;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #6a11cb;
+    }
+
+    .social-icons a {
+      font-size: 22px;
+      margin-right: 15px;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ffd700;
+    }
+
+    .image img {
+      max-width: 300px;
+      border-radius: 50%;
+      border: 4px solid  #ffd700;
+      user-select: none;
+    }
+
+    /* Card Styles */
+    .card.glass {
+      background:  linear-gradient(to right, #6a11cb, #2575fc);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      color: #fff;
+      text-align: left;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background-image: linear-gradient(to right, #6a11cb, #2575fc);
+      padding: 15px;
+      border-radius: 12px;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      transition: 0.3s;
+      cursor: default;
+      user-select: none;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+      background-image: linear-gradient(to right, #2575fc, #6a11cb);
+    }
+
+    /* Projects */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-image: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 20px;
+      border-radius: 16px;
+      transition: 0.3s ease;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+      cursor: default;
+      user-select: none;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      background-image: linear-gradient(to left, #6a11cb, #2575fc);
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      margin-top: 50px;
+      color: #fff;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .home {
+        flex-direction: column;
+        text-align: center;
+      }
+      .home .content, .image img {
+        max-width: 90%;
+      }
+    }
